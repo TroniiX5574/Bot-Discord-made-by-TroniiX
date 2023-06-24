@@ -1,0 +1,56 @@
+{
+    "token": "your_token",
+    "prefix": "-",
+    "greeting": {
+        "channel": "your_channel_id"
+            
+    },
+    "reactionRole": {
+        "your id message": {
+            "emojis": [{
+                "id": "✅",
+                "roles": "your_id_role"
+            }]
+        },
+        "allready" : {
+            "removable": true,
+            "emojis":[{
+                "name":"📡",
+                "roles":"your_id_role"
+            }]
+        },
+        "your id allready": {
+            "removable": true,
+            "emojis": [{
+                "name": "📡",
+                "roles": "your_id_role"
+            }, {
+                "name": "🤖",
+                "roles": "your_id_role"
+            }, {
+                "name":"🚚",
+                "roles": "your_id_role"
+            }, {
+                "name":"💯",
+                "roles": "your_id_role"
+            }, {
+                "name":"🔫",
+                "roles": "your_id_role"
+            }, {
+                "name":"⚽",
+                "roles":"your_id_role"
+            }, {
+                "name":"🧪",
+                "roles":"your_id_role"
+            }, {
+                "name":"💣",
+                "roles":"your_id_role"
+            }
+        ]
+        }
+    },
+    "serverStats": {
+        "humans": "your_voice_channel_for_stats"
+    },
+    "logs": "your_log_channel_id"
+}

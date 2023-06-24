@@ -11,7 +11,7 @@ Open Source Bot Discord for manage communtiy
 
 This bot has been coded in French, but only the commands need to be modified!
 
-Présentation
+## Présentation
 Bienvenue dans le référentiel du projet Discord Bot, un modèle de bot Discord basé sur discord.js et créé par TroniiX. Ce modèle est conçu pour vous aider à démarrer la création de votre propre bot Discord en suivant le guide officiel de discord.js.
 
 🏠 Page d'accueil

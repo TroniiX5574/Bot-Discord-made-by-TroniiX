@@ -12,71 +12,66 @@
   </a>
 </p>
 
-> An **open source** `discord.js` bot template which is based on official [discord.js guide](https://discordjs.guide/) to get started on making your very personal discord bot!
+# Bot-Discord-made-by-TroniiX
+Open Source Bot Discord for manage communtiy
 
-### 🏠 [Homepage](https://github.com/NamVr/DiscordBot-Template#readme)
+This bot has been coded in French, but only the commands need to be modified!
 
-## Introduction
+Présentation
+Bienvenue dans le référentiel du projet Discord Bot, un modèle de bot Discord basé sur discord.js et créé par TroniiX. Ce modèle est conçu pour vous aider à démarrer la création de votre propre bot Discord en suivant le guide officiel de discord.js.
 
-`NamVr` Discord Bot Template is an open source discord.js based bot template to get started on a new bot project. It is classic javascript template, not requiring any external dependencies unlike other famous frameworks. (This is not a framework!)
-You can scale any kind of bot project using this template. (single server based or multiple server based) It all depends on your creativity!
+🏠 Page d'accueil
+Introduction
+Le modèle Discord Bot de TroniiX est un modèle de bot open source basé sur discord.js, vous permettant de démarrer un nouveau projet de bot. Il s'agit d'un modèle JavaScript classique qui ne nécessite aucune dépendance externe, contrairement à d'autres frameworks populaires. (Ce n'est pas un framework !)
+Vous pouvez développer tout type de projet de bot en utilisant ce modèle, que ce soit basé sur un seul serveur ou sur plusieurs serveurs. Tout dépend de votre créativité !
 
-> 🛠️ **NEW!** _This template now supports **in-built typing (typescript-assistance) support** too, which means you will get all typescript-like assistant in vanilla javascipt! (Visual Studio Code tested, working 100% as expected)_
+🛠️ NOUVEAU ! Ce modèle prend désormais en charge le support intégré de la saisie (assistance TypeScript), ce qui signifie que vous bénéficierez d'une assistance similaire à TypeScript en JavaScript classique ! (Testé avec Visual Studio Code, fonctionne à 100% comme prévu)
 
-### Features:
+Fonctionnalités :
+Ce modèle propose de nombreuses fonctionnalités utiles et flexibles intégrées, telles que :
 
-This template comes in with many in-built useful and flexible features, such as
+• Gestionnaire de commandes dynamique :
+Mon modèle est doté d'un gestionnaire de commandes dynamique ! Grâce à celui-ci, vous n'avez pas besoin de modifier les fichiers principaux du bot pour créer vos propres commandes !
 
-#### • **Dynamic Command Handler:**
+Vous pouvez simplement créer des groupes de commandes (catégorisés par dossiers) dans le dossier commands.
+Vos commandes JavaScript doivent être placées dans les dossiers de catégorie correspondants. Un exemple de commande est fourni avec la commande warn. Vous pouvez utiliser le même modèle pour toutes les commandes souhaitées !
 
-- My template comes in with a dynamic command handler! Using the command handler, you don't need to indulge in main bot files to create your very own command!
-- You can simply make command groups (categorized as folders) in the [commands](https://github.com/NamVr/DiscordBot-Template/tree/master/commands/) folder.
-- Your JavaScript commands goes inside respective category folders. A sample command is provided as [ping](https://github.com/NamVr/DiscordBot-Template/blob/master/commands/misc/ping.js) command. You can use the same skeleton for all commands you want!
+• Gestionnaire d'événements dynamique :
+Tous les événements sont placés dans le dossier events. Vous n'avez pas besoin d'utiliser client.on() dans le fichier principal bot.js pour gérer les événements.
+En utilisant un code squelette simple pour les événements, vous pouvez créer autant d'événements que vous le souhaitez dans le dossier des événements en utilisant le gestionnaire d'événements.
 
-#### • **Dynamic Event Handler:**
+• Gestionnaire de déclencheurs dynamique :
+Les déclencheurs se produisent lorsqu'une "phrase" spécifique est mentionnée dans le contenu d'un message. Par exemple, si vous souhaitez que votre bot réagisse avec un :heart: lorsque quelqu'un dit bienvenue dans son message, vous pouvez le faire avec ce gestionnaire de déclencheurs !
+Le gestionnaire de déclencheurs a la même structure de base que le gestionnaire de commandes. Le gestionnaire de déclencheurs est associé au dossier triggers. Il existe des catégories de déclencheurs, comme le dossier reactions, dans le dossier des déclencheurs.
+Un exemple de commande de déclencheur est donné dans le fichier embed.js.
 
-- All events goes inside the [events](https://github.com/NamVr/DiscordBot-Template/blob/master/events/) folder. You don't need to use `client.on()` in the main `bot.js` file to handle events.
-- Using simple skeleton code for events, you can make any amount of events in the events folder using the event handler.
+• Gestionnaire de commandes slash dynamique :
+Mon modèle est livré avec un gestionnaire de commandes slash dynamique, facile à personnaliser et à créer des commandes slash.
+Les commandes, dans le dossier slashCommands, reçoivent un objet CommandInteraction. Vous pouvez consulter la documentation de discord.js pour connaître toutes les propriétés et méthodes disponibles.
 
-#### • **Dynamic Trigger Handler:**
+IMPORTANT : Dans le modèle, nous envoyons les commandes slash à Discord pour les enregistrer uniquement sur 1 serveur. En effet, il existe 2 types de commandes slash, les commandes de serveur (guild) et les commandes globales (global). Les commandes de serveur sont limitées à 1 serveur, mais dès que vous les mettez à jour, elles prennent immédiatement effet, tandis que les commandes globales peuvent prendre jusqu'à 1 heure pour prendre effet. Utilisez donc les commandes de serveur en développement et les commandes globales en production.
 
-- Triggers occur when a specific "phrase" is said in a message content. For example, if you want your bot to react with :heart: when someone say `welcome` in their message, you can do that with this trigger handler!
-- Trigger Handler also has the same skeleton structure as of command handler. The trigger handler is associated with the [triggers](https://github.com/NamVr/DiscordBot-Template/tree/master/triggers/) folder. There are trigger categories, like [reactions](https://github.com/NamVr/DiscordBot-Template/tree/master/triggers/reactions) folder, in the trigger folder.
-- A sample trigger command is given in the [`hello.js`](https://github.com/NamVr/DiscordBot-Template/tree/master/triggers/reactions/hello.js) trigger file.
+• Gestionnaire d'interactions de boutons dynamiques :
+Ce modèle est livré avec un gestionnaire d'interactions de boutons dynamiques pour recevoir et traiter les interactions de boutons.
+Les boutons peuvent être classés dans deux dossiers de catégories.
 
-#### • **Dynamic Slash Command Handler:**
+• Gestionnaire d'interactions de modals dynamiques :
+Gérez facilement les soumissions de modals entrantes à l'aide du gestionnaire de modals du modèle !
+Les modals peuvent être classées dans différents dossiers.
 
-- My template comes with a dynamic slash command handler with very easy to customize and make slash commands.
-- The commands, in the slashCommands folder, receive an [`CommandInteraction`](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) object. You can see the [documentation of discord.js](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) for all the properties and methods available.
-- **IMPORTANT:** In the template, we are sending the slash commands to discord to be registered only to 1 guild. That is because their are 2 types of slash commands, guild and global. Guild commands are restricted to 1 guild but whenever you update them, they take effect immediately, whereas global commands take upto 1 hour to take effect. So use guild commands in development and global commands for production.
+• Gestionnaire de menus contextuels dynamiques :
+Les menus contextuels sont une nouvelle addition à l'API de Discord ! Vous pouvez faire un clic droit sur un utilisateur ou un message, puis aller dans "Apps" pour trouver ces options !
+Ce modèle enregistrera toutes vos options de menus contextuels et interagira dynamiquement avec elles ! Ça vaut le coup d'essayer.
 
-#### • **Dynamic Buttons Interaction Handler:**
+• [NOUVEAU] Gestionnaire de demandes d'autocomplétion dynamique :
+Gérez facilement les demandes d'autocomplétion entrantes à l'aide du gestionnaire de modèle !
+Parfaitement dynamique pour tous vos besoins !
 
-- This template comes with a dynamic button interaction handler to receive and process button interactions.
-- Buttons can be classified in two category folders.
+• Hautement personnalisable :
+L'utilisation du modèle est si facile et amusante, vous le découvrirez par vous-même. Comme le modèle ne dépend d'aucune dépendance externe et est écrit en JavaScript, il est hautement personnalisable. Il n'y a pas de limite à votre créativité !
 
-#### • **Dynamic Modals Interaction Handler:**
-
-- Easily handle incoming modal submittions using the template handler!
-- Modals can be categorized in different folders.
-
-#### • **Dynamic Context Menu Handler:**
-
-- All new addition to discord API is context menus! You can right click a user or message -> Apps to find these options!
-- This template will register all your context menu options and dynamically interact with them! Worth a try.
-
-#### • **[NEW] Dynamic Autocomplete Interaction Request Handler:**
-
-- Easily handle incoming autocomplete requests using the template handler!
-- Perfectly dynamic for all your needs!
-
-#### • **Highly Customizable:**
-
-Using the template is so easy and fun, you would know. As the template does not rely on any external dependencies and written in javascript, it is highly customizable to any extend. There's no end to your creativity!
-
-#### • **Open source and self-hosted:**
-
-> It's yours, you have full control.
+• Open source et auto-hébergé :
+C'est le vôtre, vous avez un contrôle total.
 
 ## Install
 
@@ -86,7 +81,7 @@ npm install
 
 ## Configuration
 
-- Rename [`config-example.json`](https://github.com/NamVr/DiscordBot-Template/blob/master/config-example.json) to `config.json` and fill the token and other values. Extend config.json according to your needs!
+- Go to config.json and change the values to your own.
 
 ## Run your bot
 
@@ -94,36 +89,21 @@ npm install
 npm start
 ```
 
-## Support & Documentation
+Auteur
+👤 TroniiX
 
-I'm working to make it more professional and easy to use for everyone. There will be a documentation out very soon.
+Twitter : @TroniiX
+GitHub : @TroniiX5574
+Contributeurs
+👤 Only Me ;)
 
-> WIP : https://djs.docs.namanvrati.cf/
+Montrez votre soutien
+Donnez une ⭐️ si ce projet vous a aidé ! Votre soutien m'encourage à continuer.
+Vous pouvez également sponsoriser le projet et être répertorié en tant que contributeur ! Merci beaucoup.
 
-## Author
+📝 Licence
+Droit d'auteur © 2023 TroniiX.<br />
+Ce projet est sous licence Apache-2.0.
 
-👤 **Naman Vrati**
-
-- Website: https://namanvrati.cf/ [broken lol]
-- Twitter: [@namanvrati](https://twitter.com/namanvrati) [inactive]
-- Github: [@NamVr](https://github.com/NamVr) [follow here]
-
-### Contributors
-
-👤 Thank you so much to **[Krish Garg](https://github.com/KrishGarg)** and **[Thomas Fournier](https://github.com/GoudronViande24)** for giving awesome contributions to the project.
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/NamVr/DiscordBot-Template/issues). You can also take a look at the [contributing guide](https://github.com/NamVr/DiscordBot-Template/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you! Star-ring the project gives me encouragement to continue it.
-You can also [sponsor](https://ko-fi.com/namanvrati) the project and get listed as a contributer! Thanks a lot.
-
-## 📝 License
-
-Copyright © 2021 [Naman Vrati](https://github.com/NamVr).<br />
-This project is [Apache-2.0](LICENSE) licensed.
 
 ---

@@ -1,14 +1,8 @@
-<h1 align="center">Welcome to NamVr Discord Bot Template 👋</h1>
+<h1 align="center">Welcome to TroniiX Discord Bot 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-v3.3-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/NamVr/DiscordBot-Template#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/NamVr/DiscordBot-Template/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://twitter.com/namanvrati" target="_blank">
-    <img alt="Twitter: namanvrati" src="https://img.shields.io/twitter/follow/namanvrati.svg?style=social" />
+  <a href="[https://github.com/NamVr/DiscordBot-Template#readme](https://github.com/TroniiX5574/Bot-Discord-made-by-TroniiX)" target="_blank">
+    <img alt="Twitter: TroniiX" src="https://img.shields.io/twitter/follow/tomdieb5.svg?style=social" />
   </a>
 </p>
 
